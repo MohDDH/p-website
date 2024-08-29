@@ -1,0 +1,33 @@
+/* SKILLS */
+
+.skills__data {
+  background-color: var(--color-grey);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+}
+
+.skills__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 3rem;
+}
+
+.skills__item {
+  font-size: var(--font-size-38);
+  font-weight: (--font-weight-semi-bold);
+  transition: var(--transition-timing);
+  user-select: none;
+}
+
+.skill__span {
+  display: block;
+  font-size: var(--font-size-20);
+  margin-top: 1rem;
+}
+
+.skills__item:hover {
+  text-shadow: 0 0 2px var(--color-green);
+}
+
+/* End Skill style */

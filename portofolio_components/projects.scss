@@ -1,0 +1,42 @@
+/*  PROJECTS Style */
+@import "./mixins.scss";
+
+.projects {
+  &__main {
+    display: grid;
+    @include twoColumns(7.4rem, 7.5rem);
+  }
+
+  &__img {
+    max-width: 100%;
+    box-shadow: 0 0 0.5rem rgb(0, 0, 0, 0.15);
+    border-radius: 1rem;
+  }
+
+  &__data {
+    align-self: center;
+  }
+
+  &__description {
+    line-height: 1.5;
+  }
+
+  &__link {
+    color: var(--color-darker-blue);
+    font-family: var(--font-family-poppins);
+    font-weight: var(--font-weight-medium);
+    margin-top: 2.3rem;
+  }
+
+  &__link::after {
+    content: "";
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background-image: url("/images/external-icon.png");
+    background-size: contain;
+    margin-left: 0.7rem;
+  }
+}
+
+/* END PROJECTS Style */
